@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="1270.0" stylesheets="@../styles/style2.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameSceneController">
+   <top>
+      <VBox alignment="CENTER" prefHeight="218.0" prefWidth="1270.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label>
+               <VBox.margin>
+                  <Insets top="-75.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="137.0" prefWidth="1270.0">
+               <children>
+                  <Button fx:id="h1" mnemonicParsing="false" onAction="#buttonH1Action" styleClass="aIButton" text="Solve with AI H1">
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label prefHeight="41.0" prefWidth="386.0" text="Choose an AI to solve the puzzle">
+                     <HBox.margin>
+                        <Insets top="-80.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="h2" mnemonicParsing="false" onAction="#buttonH2Action" styleClass="aIButton" text="Solve with AI H2">
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Button fx:id="solutionButton" disable="true" mnemonicParsing="false" onAction="#seeSolution" text="See the solution">
+               <styleClass>
+                  <String fx:value="auxiliaryButtons" />
+                  <String fx:value="SolButton" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets top="-30.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </top>
+   <left>
+      <VBox prefHeight="423.0" prefWidth="363.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox prefHeight="423.0" prefWidth="344.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <VBox alignment="CENTER" prefHeight="198.0" prefWidth="1270.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="105.0" prefWidth="1270.0">
+               <children>
+                  <Button fx:id="newPuzzle" mnemonicParsing="false" onAction="#newPuzzle" prefHeight="60.0" prefWidth="215.0" styleClass="newPuzzleButton" text="New puzzle">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="exit" mnemonicParsing="false" onAction="#exitButton" prefHeight="60.0" prefWidth="215.0" styleClass="exitButton" text="Exit program">
+                     <HBox.margin>
+                        <Insets left="400.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children></VBox>
+   </bottom>
+   <center>
+      <VBox alignment="CENTER" prefHeight="559.0" prefWidth="914.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane fx:id="grid" gridLinesVisible="true" maxHeight="1000.0" maxWidth="1000.0" prefHeight="1000.0" prefWidth="1000.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="b0" mnemonicParsing="false" onAction="#button0Action" prefHeight="128.0" prefWidth="186.0" styleClass="gridButtons" />
+                  <Button fx:id="b1" mnemonicParsing="false" onAction="#button1Action" prefHeight="113.0" prefWidth="167.0" styleClass="gridButtons" GridPane.columnIndex="1" />
+                  <Button fx:id="b2" mnemonicParsing="false" onAction="#button2Action" prefHeight="130.0" prefWidth="175.0" styleClass="gridButtons" GridPane.columnIndex="2" />
+                  <Button fx:id="b3" mnemonicParsing="false" onAction="#button3Action" prefHeight="144.0" prefWidth="160.0" styleClass="gridButtons" GridPane.columnIndex="3" />
+                  <Button fx:id="b4" mnemonicParsing="false" onAction="#button4Action" prefHeight="128.0" prefWidth="187.0" styleClass="gridButtons" GridPane.rowIndex="1" />
+                  <Button fx:id="b5" mnemonicParsing="false" onAction="#button5Action" prefHeight="121.0" prefWidth="179.0" styleClass="gridButtons" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="b6" mnemonicParsing="false" onAction="#button6Action" prefHeight="128.0" prefWidth="200.0" styleClass="gridButtons" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button fx:id="b7" mnemonicParsing="false" onAction="#button7Action" prefHeight="114.0" prefWidth="149.0" styleClass="gridButtons" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Button fx:id="b8" mnemonicParsing="false" onAction="#button8Action" prefHeight="142.0" prefWidth="177.0" styleClass="gridButtons" GridPane.rowIndex="2" />
+                  <Button fx:id="b9" mnemonicParsing="false" onAction="#button9Action" prefHeight="127.0" prefWidth="157.0" styleClass="gridButtons" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button fx:id="b10" mnemonicParsing="false" onAction="#button10Action" prefHeight="118.0" prefWidth="180.0" styleClass="gridButtons" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Button fx:id="b11" mnemonicParsing="false" onAction="#button11Action" prefHeight="123.0" prefWidth="165.0" styleClass="gridButtons" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Button fx:id="b12" mnemonicParsing="false" onAction="#button12Action" prefHeight="122.0" prefWidth="192.0" styleClass="gridButtons" GridPane.rowIndex="3" />
+                  <Button fx:id="b13" mnemonicParsing="false" onAction="#button13Action" prefHeight="133.0" prefWidth="178.0" styleClass="gridButtons" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button fx:id="b14" mnemonicParsing="false" onAction="#button14Action" prefHeight="133.0" prefWidth="163.0" styleClass="gridButtons" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Button fx:id="b15" mnemonicParsing="false" onAction="#button15Action" prefHeight="133.0" prefWidth="163.0" styleClass="gridButtons" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,44 @@
+.gridButtons{
+	-fx-background-color: #22a78c;
+	-fx-font-weight: bold;
+    -fx-font-size: 50;
+}
+
+.root {
+    -fx-background-image: url("../Images/2.jpg");
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover;
+}
+
+.label{
+    -fx-text-fill: #b92529;
+    -fx-font-weight: bold;
+    -fx-font-size: 25;
+}
+
+
+.aIButton{
+	-fx-background-color: #7cb7f9;
+	-fx-font-weight: bold;
+    -fx-font-size: 28;
+}
+
+.SolButton{
+	-fx-background-color: #f41982;
+	-fx-font-weight: bold;
+    -fx-font-size: 28;
+}
+
+.newPuzzleButton{
+	-fx-background-color: #89f9bf;
+	-fx-font-weight: bold;
+    -fx-font-size: 28;
+}
+
+
+.exitButton{
+	-fx-background-color: #ae081b;
+	-fx-font-weight: bold;
+    -fx-font-size: 28;
+}
+

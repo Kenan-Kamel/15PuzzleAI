@@ -1,0 +1,25 @@
+
+.root {
+    -fx-background-image: url("../Images/3.jpg");
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover;
+}
+
+.label{
+    -fx-text-fill: #e1f989;
+    -fx-font-weight: bold;
+    -fx-font-size: 40;
+}
+
+.newPuzzleButton{
+	-fx-background-color: #89f9bf;
+	-fx-font-weight: bold;
+    -fx-font-size: 28;
+}
+
+
+.exitButton{
+	-fx-background-color: #ae081b;
+	-fx-font-weight: bold;
+    -fx-font-size: 28;
+}

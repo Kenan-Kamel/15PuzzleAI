@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="1270.0" stylesheets="@../styles/style1.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WelcomeSceneController">
+   <center>
+      <Label alignment="CENTER" text="Welcome to 15 Puzzle game!" textFill="#4ee15a" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="-90.0" />
+         </BorderPane.margin>
+      </Label>
+   </center>
+</BorderPane>

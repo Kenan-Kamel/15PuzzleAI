@@ -1,0 +1,15 @@
+.button{
+	-fx-background-color: #11c000;
+}
+
+.root {
+    -fx-background-image: url("../Images/1.jpg");
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover;
+}
+
+.label{
+    -fx-text-fill: #6ea9f0;
+    -fx-font-weight: bold;
+    -fx-font-size: 40;
+}
